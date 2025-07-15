@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="col-12 p-3">
+        <div class="container d-flex align-items-center justify-content-between">
+            <img src="./assets/Logo Vector.png" alt="logo">
+            <!-- --------------------------- -->
+            <div class="group d-none d-md-none d-lg-flex">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                    <g>
+                        <path
+                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                        </path>
+                    </g>
+                </svg>
+                <input class="input" type="search" placeholder="Search" />
+            </div>
+            <!-- ------------------ -->
+            <nav class="d-flex align-items-center gap-5 d-none d-md-none d-lg-flex">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Blog</a>
+            </nav>
+            <div class="icons d-flex gap-4 d-none d-md-none d-lg-flex">
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-cart3"></i>
+                <i class="bi bi-person"></i>
+            </div>
+            <!-- burger menu -->
+
+            <label class="burger d-flex d-md-flex d-lg-none " for="burger">
+                <input type="checkbox" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- burger menu -->
+        </div>
+
+    </header>
+    <div class="hero container d-md-flex d-lg-flex">
+        <div class="left d-none d-md-flex d-lg-flex flex-column col-3 pt-5">
+            <h3 class="p-3">Categories</h3>
+            <!-- -------- search in categories--------- -->
+
+            <div class="group pb-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                    <g>
+                        <path
+                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                        </path>
+                    </g>
+                </svg>
+                <input class="input" type="search" placeholder="Search" />
+            </div>
+            <!-- -----------------buttons in categories----------------- -->
+            <div class="btns d-flex gap-2 flex-column pb-4">
+                <label class="custom-checkbox">
+                    <input name="dummy" type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>smartphones</span>
+                </label>
+
+                <label class="custom-checkbox">
+                    <input name="dummy" type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>laptops</span>
+                </label>
+
+                <label class="custom-checkbox">
+                    <input name="dummy" type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>skincare</span>
+                </label>
+
+                <label class="custom-checkbox">
+                    <input name="dummy" type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>sunglasses</span>
+                </label>
+
+                <label class="custom-checkbox">
+                    <input name="dummy" type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>motorcycle</span>
+                </label>
+
+                <label class="custom-checkbox">
+                    <input name="dummy" type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>lighting</span>
+                </label>
+
+                <label class="custom-checkbox">
+                    <input name="dummy" type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>furniture</span>
+                </label>
+
+                <label class="custom-checkbox">
+                    <input name="dummy" type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>men shirts</span>
+                </label>
+
+                <label class="custom-checkbox">
+                    <input name="dummy" type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>women bags</span>
+                </label>
+            </div>
+            <button class="bg-black p-3">Apply</button>
+        </div>
+
+        <div class="right ps-4 pt-5 col-12 col-md-9 col-lg-9">
+            <div class="filter d-flex d-md-none d-lg-none align-items-center justify-content-between p-3">
+                <p class="m-0">Filters</p>
+                <i class="bi bi-sliders"></i>
+            </div>
+            <h3 class="pt-3">Available Products: 85</h3>
+            <!-- ----------------products cards -->
+            <section class="products container d-flex flex-wrap">
+                <div class="cardss col-6 col-md-6 col-lg-4">
+                    <div class="content py-3 px-1 p-md-2 p-lg-3 d-flex flex-column gap-2">
+                        <img src="./assets/oppo.png" alt="">
+                        <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+                        <p>$1437</p>
+                        <button class="bg-black py-2 p-md-2 p-lg-3">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="cardss col-6 col-md-6 col-lg-4">
+                    <div class="content py-3 px-1 p-md-2 p-lg-3 d-flex flex-column gap-2">
+                        <img src="./assets/Iphone.png" alt="">
+                        <p>Apple iPhone 11 128GB White (MQ233)</p>
+                        <p>$510</p>
+                        <button class="bg-black py-2 p-md-2 p-lg-3">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="cardss col-6 col-md-6 col-lg-4">
+                    <div class="content py-3 px-1 p-md-2 p-lg-3 d-flex flex-column gap-2">
+                        <img src="./assets/blue.png" alt="">
+                        <p>Apple iPhone 11 128GB White (MQ233)</p>
+                        <p>$550</p>
+                        <button class="bg-black py-2 p-md-2 p-lg-3">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="cardss col-6 col-md-6 col-lg-4">
+                    <div class="content py-3 px-1 p-md-2 p-lg-3 d-flex flex-column gap-2">
+                        <img src="./assets/oppo.png" alt="">
+                        <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+                        <p>$1437</p>
+                        <button class="bg-black py-2 p-md-2 p-lg-3">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="cardss col-6 col-md-6 col-lg-4">
+                    <div class="content py-3 px-1 p-md-2 p-lg-3 d-flex flex-column gap-2">
+                        <img src="./assets/Iphone.png" alt="">
+                        <p>Apple iPhone 11 128GB White (MQ233)</p>
+                        <p>$510</p>
+                        <button class="bg-black py-2 p-md-2 p-lg-3">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="cardss col-6 col-md-6 col-lg-4">
+                    <div class="content py-3 px-1 p-md-2 p-lg-3 d-flex flex-column gap-2">
+                        <img src="./assets/blue.png" alt="">
+                        <p>Apple iPhone 11 128GB White (MQ233)</p>
+                        <p>$550</p>
+                        <button class="bg-black py-2 p-md-2 p-lg-3">Add To Cart</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="col-12 bg-black pb-3 pt-3 pb-md-4 pt-md-4 pb-lg-5 pt-lg-5">
+        <div class="services container d-flex flex-column flex-md-row flex-lg-row py-2 py-md-4 py-lg-5 gap-5 gap-md-4 gap-lg-5">
+            <div class="leftt col-12 col-md-4 col-lg-4 d-flex flex-column gap-4 text-center text-md-start text-lg-start">
+                <div class="topp">
+                    <img src="./assets/Logo Vector (1).png" alt="logo">
+                </div>
+                <div class="bottomm">
+                    <p>We are a residential interior design firm located in Portland. Our boutique studio offers more
+                        than</p>
+                </div>
+            </div>
+            <div class="middle col-12 col-md-4 col-lg-4 text-center text-md-start text-lg-start">
+                <h2>Services</h2>
+                <div class="links d-flex flex-column gap-4">
+                    <a href="#">Bonus program</a>
+                    <a href="#">Gift cards</a>
+                    <a href="#">Credit and payment</a>
+                    <a href="#">Service contracts</a>
+                    <a href="#">Non-cash account</a>
+                    <a href="#">Payment</a>
+                </div>
+            </div>
+            <div class="rightt col-12 col-md-4 col-lg-4 text-center text-md-start text-lg-start">
+                <h2>Assistance to the buyer</h2>
+                <div class="links d-flex flex-column gap-4">
+                    <a href="#">Find an order</a>
+                    <a href="#">Terms of delivery</a>
+                    <a href="#">Exchange and return of goods</a>
+                    <a href="#">Guarantee</a>
+                    <a href="#">Frequently asked questions</a>
+                    <a href="#">Terms of use of the site</a>
+                </div>
+            </div>
+        </div>
+        <div class="social container d-flex justify-content-center justify-content-md-start justify-content-lg-start gap-5 p-4 p-md-0 p-lg-0">
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-tiktok"></i>
+            <i class="bi bi-instagram"></i>
+        </div>
+    </footer>
+</body>
+
+</html>

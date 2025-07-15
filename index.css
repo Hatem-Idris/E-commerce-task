@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+
+  nav {
+    a {
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.219);
+      &:focus {
+        color: black;
+      }
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .icons {
+    i {
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+  /* burger menu */
+
+  .burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+
+  .burger input {
+    display: none;
+  }
+
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+  /* burger menu */
+}
+
+.hero {
+  .left {
+    h3 {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    }
+    .btns {
+      span {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+      }
+    }
+    button {
+      text-align: center;
+      color: white;
+      border-radius: 8px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      border: 0;
+    }
+  }
+  .right {
+    .filter {
+      border: 1px solid rgba(0, 0, 0, 0.24);
+      border-radius: 8px;
+      p {
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+    h3 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: clamp(7px, 5vw, 16px);
+    }
+    .products {
+      .cardss {
+        padding: 0.5rem;
+        transition: 600ms;
+        &:hover {
+          transform: scale(1.1);
+        }
+        .content {
+          width: 100%;
+          height: 100%;
+          background-color: #f6f6f6;
+          border-radius: 9px;
+
+          p {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: clamp(14px, 4vw, 16px);
+          }
+
+          img {
+            border-radius: 6px;
+          }
+
+          button {
+            text-align: center;
+            color: white;
+            border-radius: 8px;
+            font-weight: 500;
+            font-family: "Roboto", sans-serif;
+            font-size: clamp(7px, 4vw, 16px);
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.input {
+  height: 40px;
+  line-height: 28px;
+  padding: 1.5rem 6rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    width: 100%;
+    padding: 0;
+    padding-left: 2.5rem;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1080px) {
+    padding: 1rem;
+    padding-left: 2.5rem;
+  }
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(247, 127, 0, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(247 127 0 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* From Uiverse.io by KhaledMatalkah */
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #3333332d;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.custom-checkbox .checkmark::before {
+  content: "\2713";
+  font-size: 16px;
+  color: transparent;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #333;
+  border-color: #333;
+  transform: scale(1.1) rotateZ(360deg) rotateY(360deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+  color: #fff;
+}
+
+.custom-checkbox:hover {
+  color: #666;
+}
+
+.custom-checkbox:hover .checkmark {
+  border-color: #666;
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.custom-checkbox input[type="checkbox"]:focus + .checkmark {
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.custom-checkbox .checkmark,
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  transition: background-color 1.3s, border-color 1.3s, color 1.3s,
+    transform 0.3s;
+}
+
+footer {
+  p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: clamp(7px, 4vw, 13px);
+    color: #CFCFCF;
+  }
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: clamp(7px, 4vw, 16px);
+    color: white;
+  }
+
+    .links {
+      a {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        color: #CFCFCF;
+        font-size: clamp(7px, 4vw, 14px);
+      }
+    }
+    i{
+      color: white;
+    }
+  }
