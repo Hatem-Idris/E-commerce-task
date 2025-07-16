@@ -332,6 +332,11 @@ footer {
       text-decoration: none;
       color: #cfcfcf;
       font-size: clamp(7px, 4vw, 14px);
+      transition: 400ms;
+
+      &:hover{
+        margin: 0 1rem;
+            }
     }
   }
   i {
