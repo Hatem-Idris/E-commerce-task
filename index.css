@@ -161,6 +161,37 @@ header {
         }
       }
     }
+    .pswitches {
+
+    .butonss{
+      #lt, #gt{
+        background-color: white;
+
+        &:hover{
+          background-color: black;
+          color: white;
+        }
+      }
+      button {
+        border: 0;
+        padding: 4px 11px;
+        background-color: #f6f6f6;
+        border-radius: 5px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        transition: 800ms;
+
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      padding: 2px 5px;
+  }
+
+        &:hover{
+          background-color: #0d0c22;
+          color: white;
+        }
+      }
+    }
+    }
   }
 }
 .group {
@@ -285,7 +316,7 @@ footer {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: clamp(7px, 4vw, 13px);
-    color: #CFCFCF;
+    color: #cfcfcf;
   }
   h2 {
     font-family: "Roboto", sans-serif;
@@ -294,16 +325,16 @@ footer {
     color: white;
   }
 
-    .links {
-      a {
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        text-decoration: none;
-        color: #CFCFCF;
-        font-size: clamp(7px, 4vw, 14px);
-      }
-    }
-    i{
-      color: white;
+  .links {
+    a {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      text-decoration: none;
+      color: #cfcfcf;
+      font-size: clamp(7px, 4vw, 14px);
     }
   }
+  i {
+    color: white;
+  }
+}
